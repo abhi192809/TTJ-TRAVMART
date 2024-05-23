@@ -20,28 +20,7 @@ if ($_SERVER['HTTP_HOST'] == 'www.ttjtravmart.com') {
 }
 ?>
     
-    <?php
-      include('config.php');
-      $url_parts = $_SERVER['REQUEST_URI'];
-      $q1 = mysqli_query( $config,"SELECT * FROM `url`");
-      while($data_fatch = mysqli_fetch_array($q1)){
-       if($data_fatch['url'] == $url_parts){
-          ?>
-    <meta name="description" content="<?php echo $data_fatch['decription'] ?>">
-	<title><?php echo $data_fatch['title']?></title>   
-	<meta name="keywords" content="<?php echo $data_fatch['keyword'] ?>">
-	<link rel="canonical" href="<?php echo $data_fatch['canonical'] ?>" />
-          <?php
-       }
-       
-      }
-      
-      if($url_parts == "/gallery"){
-       ?>
-       <link rel="stylesheet" href="<?php echo base_url();?>assets/css/main.css">
-       <?php
-       }
-    ?>    
+  
 </head>
 
 <body>
