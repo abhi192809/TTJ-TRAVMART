@@ -205,15 +205,15 @@
                 // Check the 'status' value and perform actions accordingly
                 if (response.status === 'success') {
                     if (response.type === 'Admin') {
-                        window.location.href = "https://www.ttjtravmart.com/Meeting/Admin/dashboard";
+                        window.location.href = "<?php echo base_url()?>Meeting/Admin/dashboard";
                     } else if (response.type === 'Buyer') {
-                        window.location.href = "https://www.ttjtravmart.com/Meeting/Buyer/dashboard";
+                        window.location.href = "<?php echo base_url()?>Meeting/Buyer/dashboard";
                     } else if (response.type === 'Seller') {
-                        window.location.href = "https://www.ttjtravmart.com/Meeting/Selleruser/seller";
+                        window.location.href = "<?php echo base_url()?>Meeting/Selleruser/seller";
                     } else if (response.type === 'Staff-Markating') {
-                        window.location.href = "https://www.ttjtravmart.com/Meeting/Staffmarkating/dashboard";
+                        window.location.href = "<?php echo base_url()?>Meeting/Staffmarkating/dashboard";
                     } else if (response.type === 'User') {
-                        window.location.href = "https://www.ttjtravmart.com/Meeting/Users/dashboard";
+                        window.location.href = "<?php echo base_url()?>Meeting/Users/dashboard";
                     } else {
                         console.log('User type is not recognized');
                     }
