@@ -1,0 +1,124 @@
+.nav_top{
+    border:1px solid  black;
+    border-bottom:2px solid black;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2px;
+    padding-top: 5px;
+    padding-right: 11px;
+
+}
+ body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        #sidebar {
+            background: black;
+            color: #fff;
+            padding: 15px;
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            overflow-y: auto;
+        }
+      
+        @media screen and (max-width: 14992px) {
+        
+       #content {
+            margin-left: 250px;
+            padding: 0px;
+        }
+        
+        }
+        @media screen and (max-width: 792px) {
+        
+       #content {
+            margin-left: 0px !important;
+            padding: 0px;
+        }
+        
+        }
+
+        /* Add your own styles for tables, forms, charts, etc. */
+
+        a {
+            color: White;
+            text-decoration: none;
+            border-bottom:2px solid White !important;
+            text-decoration: none;
+            padding-bottom: 25px !important;
+            padding-top: 25px !important;
+    
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        #sidebar::-webkit-scrollbar {
+            width: 8px; /* For Chrome, Safari, and Opera */
+        }
+
+        #sidebar::-webkit-scrollbar-thumb {
+            background-color: #555; /* Thumb color */
+            border-radius: 4px; /* Rounded corners */
+        }
+
+        #sidebar::-webkit-scrollbar-track {
+            background-color: #333; /* Track color */
+        }
+        .notification{
+            position: absolute;
+            font-size: 10px;
+            background: red;
+            padding: 2px;
+            border-radius: 18px;
+            color: white;
+            right: 4.6pc;
+        }
+        
+        .loging_or_out{
+            margin:0px 20px;
+            color: dimgrey;
+        }
+        
+        .filter{
+            display: inline-flex;
+        }
+        .appandvalue {
+            height: 30pc; /* Set a fixed height for the container */
+            overflow-y: auto; /* Enable vertical scrolling */
+            /* Add any additional styling as needed */
+        }
+        .appandvalue::-webkit-scrollbar {
+        width: 8px;
+        }
+    
+        .appandvalue::-webkit-scrollbar-thumb {
+           background-color: #555; /* Thumb color */
+            border-radius: 4px; /* Rounded corners */
+        }
+        .appandvalue::-webkit-scrollbar-track {
+            background-color: #333; /* Track color */
+        }
+       .box_show {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            position: relative;
+        }
+        
+        .link {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .hover_link_show{
+             display:none;
+        }
+        .box_show:hover .hover_link_show {
+            display: block;
+        }
+        .link1{
+          position: absolute;
+          right: 32px;   
+        }
+        
